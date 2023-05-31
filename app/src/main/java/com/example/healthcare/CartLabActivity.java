@@ -106,7 +106,12 @@ public class CartLabActivity extends AppCompatActivity {
         //timepicker
         initTimePicker();
 
-
+        timeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                timePickerDialog.show();
+            }
+        });
 
 
        btnBack.setOnClickListener(new View.OnClickListener() {
