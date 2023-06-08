@@ -71,7 +71,7 @@ public class CartLabActivity extends AppCompatActivity {
             String arrData = dbData.get(i).toString();
             String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
             packages[i][0]=strData[0];
-            packages[i][4]="Cost : "+strData+"/-";
+            packages[i][4]="Cost : "+strData[1]+"/-";
             totalAmount=totalAmount+Float.parseFloat(strData[1]);
         }
         tvTotal.setText("Total Cost: "+totalAmount);
@@ -113,6 +113,18 @@ public class CartLabActivity extends AppCompatActivity {
             }
         });
 
+
+        btnCheckOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(CartLabActivity.this, LabTestBookActivity.class);
+                it.putExtra("price",tvTotal.getText());
+                it.putExtra("date",dateBtn.getText());
+                it.putExtra("time",timeBtn.getText());
+                startActivity(it);
+
+            }
+        });
 
        btnBack.setOnClickListener(new View.OnClickListener() {
            @Override

@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textViewCartTotalCost"
-        android:layout_width="188dp"
-        android:layout_height="37dp"
+        android:layout_width="222dp"
+        android:layout_height="39dp"
         android:text="Total Cost:270"
         android:textAlignment="center"
         android:textColor="@color/yellow"
@@ -21,7 +21,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71" />
+        app:layout_constraintVertical_bias="0.724" />
 
     <TextView
         android:id="@+id/textView7"
@@ -34,14 +34,14 @@
         app:layout_constraintHorizontal_bias="0.176"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758" />
+        app:layout_constraintVertical_bias="0.786" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="168dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="152dp"
         android:text="Select Time"
         android:textColor="@color/yellow"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,10 +59,10 @@
         android:textColor="@color/material_dynamic_neutral100"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.838" />
+        app:layout_constraintVertical_bias="0.867" />
 
     <Button
         android:id="@+id/buttonCLDate"
@@ -74,16 +74,16 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.217"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintVertical_bias="0.88" />
 
     <Button
         android:id="@+id/buttonLDGoBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="16dp"
         android:shadowColor="#ED0808"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -141,8 +141,8 @@
 
     <ListView
         android:id="@+id/listViewCart"
-        android:layout_width="409dp"
-        android:layout_height="331dp"
+        android:layout_width="400dp"
+        android:layout_height="334dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
@@ -159,11 +159,11 @@
         android:id="@+id/buttonCartCheckout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:text="CheckOut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

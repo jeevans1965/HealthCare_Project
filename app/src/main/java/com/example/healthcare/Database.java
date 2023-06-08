@@ -25,6 +25,9 @@ public class Database extends SQLiteOpenHelper {
 
         String qry2 = "create table cart(username text, product text, price float , otype text)";
         sqLiteDatabase.execSQL(qry2);
+
+        String qry3 = "create table orderplace(id INTEGER PRIMARY KEY AUTOINCREMENT, amount float, address text, pincode text, contactno text, username text, date text, time text, otype text, fullname text)";
+        sqLiteDatabase.execSQL(qry3);
     }
 
     @Override
@@ -102,10 +105,42 @@ public class Database extends SQLiteOpenHelper {
                 String price = c.getString(2);
                 arr.add(product+"$"+price);
 
-            }while(c.moveToFirst());
+            }while(c.moveToNext());
         }
         db.close();
         return arr;
     }
+
+    public void addOrder(String username, String fullname, String address, String contact, int pincode, String date, String time , float price, String otype){
+        ContentValues cv =new ContentValues();
+        cv.put("username",username);
+        cv.put("fullname",fullname);
+        cv.put("address",address);
+        cv.put("contactno",contact);
+        cv.put("pincode",pincode);
+        cv.put("date",date);
+        cv.put("time",time);
+        cv.put("amount",price);
+        cv.put("otype",otype);
+        SQLiteDatabase db= getWritableDatabase();
+        db.insert("orderplace",null,cv);
+        db.close();
+    }
+
+    public ArrayList getOrderData(String username){
+        ArrayList<String> arr = new ArrayList<>();
+        SQLiteDatabase db = getReadableDatabase();
+        String str[] =new String[1];
+        str[0]=username;
+        Cursor c=db.rawQuery("select * from orderplace where username = ?",str);
+        if(c.moveToFirst()){
+            do{
+                arr.add(c.getString(1)+"$"+c.getString(2)+"$"+c.getString(3)+"$"+c.getString(4)+"$"+c.getString(5)+"$"+c.getString(6)+"$"+c.getString(7)+"$"+c.getString(8));
+            }while (c.moveToNext());
+        }
+        db.close();
+        return arr;
+    }
+
 
 }
