@@ -70,8 +70,6 @@ public class OrderDetailsActivity extends AppCompatActivity {
             item.put("line5",order_details[i][4]);
             list.add(item);
         }
-
-
         sa = new SimpleAdapter(this, list,
                 R.layout.multi_lines,
                 new String[]{"line1", "line2", "line3", "line4", "line5"},

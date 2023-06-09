@@ -10,9 +10,10 @@
 
     <TextView
         android:id="@+id/textViewODtitle"
-        android:layout_width="162dp"
-        android:layout_height="45dp"
+        android:layout_width="209dp"
+        android:layout_height="43dp"
         android:text="Orders Details"
+        android:textAlignment="center"
         android:textColor="@color/design_default_color_surface"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -25,8 +26,8 @@
 
     <ListView
         android:id="@+id/listViewOD"
-        android:layout_width="337dp"
-        android:layout_height="482dp"
+        android:layout_width="377dp"
+        android:layout_height="433dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
