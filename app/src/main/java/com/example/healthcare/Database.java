@@ -153,7 +153,7 @@ public class Database extends SQLiteOpenHelper {
     str[4]=date;
     str[5]=time;
     SQLiteDatabase db =getReadableDatabase();
-    Cursor c=db.rawQuery("select * from orderplace where username = ? and fullname = ? and address = ? and contactno = ?",str);
+    Cursor c=db.rawQuery("select * from orderplace where username = ? and fullname = ? and address = ? and contactno = ? and date = ? and time = ?",str);
     if(c.moveToFirst()){
         result=1;
     }
