@@ -61,14 +61,5 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        CardView anoacc = findViewById(R.id.cardAAccount);
-        anoacc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this,LoginActivity.class));
-            }
-        });
-
-
     }
 }

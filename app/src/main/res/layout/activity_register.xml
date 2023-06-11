@@ -99,20 +99,21 @@
 
     <TextView
         android:id="@+id/textViewAppTitle"
-        android:layout_width="147dp"
-        android:layout_height="52dp"
+        android:layout_width="201dp"
+        android:layout_height="55dp"
         android:paddingStart="10sp"
         android:paddingLeft="30sp"
         android:text="Register"
+        android:textAlignment="center"
         android:textColor="@color/design_default_color_surface"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.189" />
+        app:layout_constraintVertical_bias="0.194" />
 
     <EditText
         android:id="@+id/editTextAppFullName"

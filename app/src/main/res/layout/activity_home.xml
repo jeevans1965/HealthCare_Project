@@ -111,8 +111,8 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardAAccount"
-            android:layout_width="100dp"
+            android:id="@+id/cardHealthDoctor"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
             android:layout_rowWeight="1"
@@ -131,16 +131,22 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calendar" />
+
                 <TextView
-                    android:layout_width="141dp"
-                    android:layout_height="57dp"
-                    android:text="Click here to Login through another Account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Health Articles"
                     android:textAlignment="center"
                     android:textColor="@color/red"
                     android:textStyle="bold" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
 
 
         <androidx.cardview.widget.CardView
