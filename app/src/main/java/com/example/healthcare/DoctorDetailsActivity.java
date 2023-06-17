@@ -66,7 +66,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_details);
 
-        tv = findViewById(R.id.textView_logo6);
+        tv = findViewById(R.id.textViewHADtitle);
         btn = findViewById(R.id.buttonCartCheckout);
 
         Intent it = getIntent();

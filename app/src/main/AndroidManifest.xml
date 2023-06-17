@@ -13,6 +13,12 @@
         android:theme="@style/Theme.HealthCare"
         tools:targetApi="31">
         <activity
+            android:name=".HealthArticles"
+            android:exported="false" />
+        <activity
+            android:name=".HealthArticlesDetails"
+            android:exported="false" />
+        <activity
             android:name=".OrderDetailsActivity"
             android:exported="false" />
         <activity

@@ -53,7 +53,7 @@
         app:layout_constraintVertical_bias="0.042" />
 
     <TextView
-        android:id="@+id/textView_logo6"
+        android:id="@+id/textViewHADtitle"
         android:layout_width="212dp"
         android:layout_height="37dp"
         android:paddingLeft="20dp"
@@ -78,7 +78,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_logo6" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewHADtitle" />
 
 
     <Button
